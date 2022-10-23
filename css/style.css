@@ -91,43 +91,42 @@ html, body {
   font-size: 18px;
   line-height: 1.75;
 }
-.header-body {
-}
+
 /* ----------------------------------------- */
 
-.header-body {
+.header__body {
   margin-bottom: 135px;
 }
 
-.header-body__inner {
+.header__body-inner {
   display: flex;
 }
-.header-body__main {
+.header__body-main {
   padding-top: 82px;
 }
-.header-body__title {
+.header__body-title {
   font-weight: 800;
   line-height: 84px;
   font-size: 64px;
   margin-bottom: 32px;
 }
-.header-body__buttons {
+.header__body-buttons {
   display: flex;
   margin-bottom: 48px;
   align-items: center;
 }
-.header-body__button {
+.header__body-button {
   margin-right: 33px;
 }
 
-.header-body_button-play {
+.header__body-button-play {
   position: relative;
   padding-left: 32px;
   font-weight: 500;
   line-height: 19px;
   cursor: pointer;
 }
-.header-body_button-play::before {
+.header__body-button-play::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -139,30 +138,30 @@ html, body {
   background: url("/images/icons/play-video.svg");
 }
 
-.header-body__block-info-open {
+.header__body-block-info-open {
   display: flex;
 }
-.header-body_block-info-open-img {
+.header__body-block-info-open-img {
   margin-right: 13px;
   display: flex;
   align-items: center;
 }
-.header-body__block-info-open-text {
+.header__body-block-info-open-text {
 }
-.header-body__block-info-open-title {
+.header__body-block-info-open-title {
   font-weight: 500;
   line-height: 24px;
   color: #939191;
 }
-.header-body__block-info-open-main {
+.header__body-block-info-open-main {
   font-weight: 600;
   font-size: 18px;
   line-height: 1.7;
 }
-.header-body__image {
+.header__body-image {
   position: relative;
 }
-.header-body__block-service {
+.header__body-block-service {
   position: absolute;
   top: 81px;
   left: -40px;
@@ -172,10 +171,10 @@ html, body {
   border-radius: 59px;
   background-clip: padding-box;
 }
-.header-body__block-service-img {
+.header__body-block-service-img {
   padding: 15px 14px 17px 13px;
 }
-.header-body__block-service-text {
+.header__body-block-service-text {
   display: flex;
   align-items: center;
   font-weight: 600;
@@ -183,7 +182,7 @@ html, body {
   line-height: 36px;
   padding-right: 37px;
 }
-.header-body__block-rating {
+.header__body-block-rating {
   position: absolute;
   bottom: 70px;
   right: -30px;
@@ -193,19 +192,90 @@ html, body {
   border-radius: 59px;
   background-clip: padding-box;
 }
-.header-body__block-rating-value {
+.header__body-block-rating-value {
   padding: 24px 15px 24px 38px;
 }
-.header-body__rating {
+.header__body-rating {
   font-weight: 600;
   font-size: 24px;
   line-height: 36px;  
 }
-.header-body__rating-text {
+.header__body-rating-text {
   font-weight: 500;
   line-height: 24px;
 }
-.header-body__rating-img {
+.header__body-rating-img {
   margin: auto;
   padding-right: 32px;
+}
+
+/* offers */
+
+.offers {
+  background: #F2F2F2;
+  padding-top: 128px;
+}
+
+.offers__title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  margin-bottom: 8px;
+}
+.offers__subtitle {
+  font-weight: 800;
+  font-size: 58px;
+  line-height: 76px;
+  text-align: center;
+  margin-bottom: 64px;
+}
+.offers__items {
+  display: grid;
+  grid: repeat(2, 1fr) / repeat(4, 1fr);
+  margin-bottom: 32px;
+}
+.offers__item {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 73px 0 62px;
+  background: #fff;
+  margin: 0 8px 8px 0;
+}
+.offers__text {
+  padding-top: 16px;
+}
+.offers__item:hover{
+  background: #FF6433;
+  cursor: pointer;
+  color: #fff;
+}
+.offers__item:hover svg path{
+  fill: #fff;
+}
+.offers__button {
+  text-align: end;
+  margin-right: 68px;
+  position: relative;
+}
+.offers__button-arrow {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 175%;
+  cursor: pointer;
+}
+.offers__button-arrow::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: -60px;
+  transform: translateY(-50%);
+  display: block;
+  width: 52px;
+  height: 16px;
+  background: url(/images/icons/services/arrow.svg);
 }
