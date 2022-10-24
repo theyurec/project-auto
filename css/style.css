@@ -135,7 +135,7 @@ html, body {
   display: block;
   width: 24px;
   height: 24px;
-  background: url("/images/icons/play-video.svg");
+  background: url("../images/icons/play-video.svg");
 }
 
 .header__body-block-info-open {
@@ -277,5 +277,5 @@ html, body {
   display: block;
   width: 52px;
   height: 16px;
-  background: url(/images/icons/services/arrow.svg);
+  background: url(../images/icons/services/arrow.svg);
 }
