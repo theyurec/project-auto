@@ -373,7 +373,10 @@ html, body {
 .contact__image-left {
   margin-left: -318px;
 }
-.contact__image-right {
+.contact__image-right img{
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
 }
 
 .contact__text {
