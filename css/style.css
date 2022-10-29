@@ -559,6 +559,8 @@ html, body {
 }
 .reviews__slider-arrows {
   display: flex;
+  align-items: center;
+  margin-right: 20px;
 }
 .reviews__slider-arrow {
   position: relative;
@@ -596,7 +598,7 @@ html, body {
   padding-bottom: 128px;
 }
 .reviews__slider-dots {
-  margin-right: 473px;
+  margin-right: 453px;
 }
 
 .reviews__slider-dots .slick-dots {
@@ -629,4 +631,119 @@ html, body {
 .reviews__slider-dots .slick-active button::before {
   background-color: #FF6433;
   transition: all  .3s;
+}
+
+/* QUESTIONS */
+
+.questions {
+  background: #E2E6E9;
+}
+.questions__inner {
+  padding: 128px 0;
+}
+.questions__title {
+  font-weight: 800;
+  font-size: 58px;
+  line-height: 76px;
+  text-align: center;
+  letter-spacing: -0.03em;
+  margin-bottom: 86px;
+}
+.questions__accordeon {
+  max-width: 896px;
+  margin: 0 auto;
+}
+.questions__list {
+}
+.questions__item {
+  background: #fff;
+  margin-bottom: 12px;
+  padding: 32px 40px 38px;
+}
+.questions__item:last-child {
+  margin-bottom: 0;
+}
+
+.questions__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.questions__item-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: -0.03em;
+}
+.questions__button {
+  width: 51px;
+  height: 48px;
+  background: #FF6433;
+  position: relative;
+}
+.questions__button::before,
+.questions__button::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 17px;
+  height: 2px;
+  border-radius: 2px;
+  background-color: #fff;
+}
+.questions__button::after {
+  transform: rotate(90deg);
+  transition: all .3s;
+  left: 35%;
+}
+
+.questions__link--active .questions__button::after {
+  transform: rotate(0deg);
+}
+.questions__item-text {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 175%;
+  color: #939191;
+  max-width: 701px;
+  padding-top: 16px;
+  display: none;
+}
+
+/* FEEDBACK */
+
+.feedback {
+}
+
+.feedback__title {
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 84px;
+  letter-spacing: -0.03em;
+  padding-top: 121px;
+  margin-bottom: 48px;
+}
+.feedback__form-address {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 48px;
+}
+.feedback__form {
+  
+}
+.feedback__input {
+  display: block
+}
+.feedback__contacts {
+}
+.feedback__contacts-info {
+}
+.feedback__contacts-title {
+}
+.feedback__contacts-text {
+}
+.feedback_button {
+  margin-bottom: 522px;
 }

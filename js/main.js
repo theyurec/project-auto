@@ -24,4 +24,17 @@ $(function () {
       $('.reviews__slider').slick('slickNext')
   })
 
+  $('.questions__link').on('click', function(e){
+    e.preventDefault()
+    if($(this).hasClass('questions__link--active')) {
+      $(this).removeClass('questions__link--active')
+      $(this).children('.questions__item-text').slideUp()
+    } else {
+      $('.questions__link').removeClass('questions__link--active')
+      $('.questions__item-text').slideUp()
+      $(this).addClass('questions__link--active')
+      $(this).children('.questions__item-text').slideDown()
+    }
+  })
+
 });
