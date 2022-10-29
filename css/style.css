@@ -716,7 +716,6 @@ html, body {
 
 .feedback {
 }
-
 .feedback__title {
   font-weight: 800;
   font-size: 64px;
@@ -734,15 +733,39 @@ html, body {
   
 }
 .feedback__input {
-  display: block
+  display: block;
+  background: #F2F2F2;
+  border-radius: 2px;
+  margin-bottom: 4px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 28px;
+  padding: 23px 40px;
+  
+}
+.feedback__input:last-child{
+  margin-bottom: 0;
 }
 .feedback__contacts {
+  
 }
 .feedback__contacts-info {
+  margin-bottom: 32px;
+}
+.feedback__contacts-info:last-child {
+  margin-bottom: 0;
 }
 .feedback__contacts-title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 28px;
+  opacity: 0.7;
 }
 .feedback__contacts-text {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: -0.03em;
 }
 .feedback_button {
   margin-bottom: 522px;
