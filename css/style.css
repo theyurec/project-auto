@@ -160,7 +160,9 @@ html, body {
 }
 .header__body-image {
   position: relative;
+  
 }
+
 .header__body-block-service {
   position: absolute;
   top: 81px;
