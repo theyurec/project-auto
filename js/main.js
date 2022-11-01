@@ -12,8 +12,18 @@ $(function () {
     draggable: false,
     variableWidth: true,
     appendArrows: $('.reviews__slider-arrows'),
-    appendDots: $('.reviews__slider-dots')
-  })
+    appendDots: $('.reviews__slider-dots'),
+    responsive:
+    [
+      {
+        breakpoint: 1280,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ]
+  });
+  
 
   $('.reviews__slider-prev').on('click', function(e){
     e.preventDefault()
