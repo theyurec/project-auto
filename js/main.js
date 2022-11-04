@@ -10,17 +10,18 @@ $(function () {
     dots: true,
     slidesToShow: 2,
     draggable: false,
-    variableWidth: true,
     appendArrows: $('.reviews__slider-arrows'),
     appendDots: $('.reviews__slider-dots'),
     responsive:
     [
       {
-        breakpoint: 1280,
+        breakpoint: 740,
         settings: {
           slidesToShow: 1,
-        },
-      },
+          draggable: true,
+        }
+      }
+    
     ]
   });
   

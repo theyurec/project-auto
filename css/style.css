@@ -539,7 +539,6 @@ html, body {
   background: #fff;
   padding: 72px;
   margin-right: 48px;
-  max-width: 613px;
 }
 
 .reviews__person {
@@ -549,8 +548,7 @@ html, body {
 .reviews__avatar {
   margin-right: 16px;
 }
-.reviews__person-info {
-}
+
 .reviews__person-name {
   font-weight: 600;
   font-size: 24px;
@@ -568,16 +566,17 @@ html, body {
   font-size: 24px;
   line-height: 36px;
   letter-spacing: -0.03em;
-  
 }
 .reviews__slider-arrows-dots {
   display: flex;
-  justify-content: end;
+  justify-content: space-between;
 }
 .reviews__slider-arrows {
   display: flex;
   align-items: center;
-  margin-right: 20px;
+  margin-right: 30px;
+  justify-content: end;
+  
 }
 .reviews__slider-arrow {
   position: relative;
@@ -615,7 +614,7 @@ html, body {
   padding-bottom: 128px;
 }
 .reviews__slider-dots {
-  margin-right: 453px;
+  margin: auto;
 }
 
 .reviews__slider-dots .slick-dots {
@@ -1264,13 +1263,88 @@ html, body {
 }
 @media (max-width: 700px) {
   .location {
-    height: 200px;
-    
+    height: 200px; 
 }
 }
-@media (max-width: 455px) {
-  .location {
-    
-    
+
+@media (max-width: 1230px) {
+  .reviews__slide {
+    padding: 32px;
+}
+.reviews__paragraph {
+  font-size: 16px;
+  line-height: 26px;
+}
+.reviews__slide {
+  margin-right: 15px;
+}
+.reviews__person {
+  margin-bottom: 4px;
+}
+}
+@media (max-width: 940px) {
+  .reviews__title {
+    font-size: 38px;
+    line-height: 56px;
+    margin-bottom: 26px;
+    padding-top: 28px;
+}
+.reviews__slider-arrows-dots {
+  padding-bottom: 28px;
+}
+  .reviews__slide {
+    padding: 10px;
+}
+}
+@media (max-width: 740px) {
+  .reviews__slider-arrows {
+    display: none;
+  }
+  .reviews__title {
+    font-size: 28px;
+    line-height: 36px;
+}
+}
+@media (max-width: 1100px) {
+  .feedback__contacts {
+    margin-left: 39px;
+}
+}
+@media (max-width: 1000px) {
+  .feedback__title {
+    font-size: 48px;
+    line-height: 54px;
+    padding-top: 30px;
+    margin-bottom: 28px;
+    text-align: center;
+}
+.feedback__form-address {
+  flex-direction: column;
+  align-items: center;
+}
+.feedback__form {
+  width: 100%;
+  margin-bottom: 30px;
+}
+.feedback_button {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.feedback_button {
+  margin-bottom: 250px;
+}
+}
+
+@media (max-width: 550px) {
+  .feedback__contacts-info {
+    margin-bottom: 10px;
+}
+  .feedback__contacts-text {
+    font-size: 16px;
+    line-height: 36px;
+}
+.feedback_button {
+  margin-bottom: 50px;
 }
 }
