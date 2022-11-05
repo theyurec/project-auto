@@ -41,6 +41,11 @@ html, body {
   border-radius: 12px;
   background: #FF6433;
   cursor: pointer;
+  transition: all .3s;
+}
+.button:hover {
+  transform: scale(1.1);
+  transition: all .3s;
 }
 
 
@@ -156,6 +161,10 @@ html, body {
   width: 24px;
   height: 24px;
   background: url("../images/icons/play-video.svg");
+}
+.header__body-button-play:hover::before  {
+  box-shadow: 0px 0px 10px 3px gray;
+  border-radius: 50%;
 }
 
 .header__body-block-info-open {
@@ -280,27 +289,28 @@ html, body {
 }
 .offers__button {
   text-align: end;
-  margin-right: 68px;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  max-width: 248px;
+  margin-left: auto;
 }
+
+.offers__button:hover{
+  background: #FF6433;
+}
+.offers__button:hover 
 
 .offers__button-arrow {
   font-weight: 600;
   font-size: 18px;
   line-height: 175%;
   cursor: pointer;
+  margin-right: 16px;
 }
-.offers__button-arrow::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  right: -60px;
-  transform: translateY(-50%);
-  display: block;
-  width: 52px;
-  height: 16px;
-  background: url(../images/icons/services/arrow.svg);
-  background-repeat: no-repeat;
+.offers__button-arrow-img {
+  
 }
 
 /* SECTION-HELP */
