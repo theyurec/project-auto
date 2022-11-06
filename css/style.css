@@ -295,12 +295,19 @@ html, body {
   justify-content: end;
   max-width: 248px;
   margin-left: auto;
+  border-radius: 10px;
+  transition: all .3s;
 }
 
 .offers__button:hover{
   background: #FF6433;
+  transition: all .3s;
+  color: #fff
 }
-.offers__button:hover 
+.offers__button:hover .offers__button-arrow-img path {
+  fill: #fff;
+}
+
 
 .offers__button-arrow {
   font-weight: 600;
